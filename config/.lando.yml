@@ -1,0 +1,17 @@
+name: example-project
+recipe: wordpress
+proxy:
+  appserver_nginx:
+    - example-project.test
+config:
+  webroot: .
+  database: mariadb
+  via: nginx
+  php: '7.3'
+services:
+  phpmyadmin:
+    type: phpmyadmin
+  mailhog:
+    type: mailhog
+  redis:
+    type: redis
