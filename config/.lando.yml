@@ -13,5 +13,5 @@ services:
     type: phpmyadmin
   mailhog:
     type: mailhog
-  redis:
-    type: redis
+#  redis:
+#    type: redis
